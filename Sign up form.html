@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang=en>
+<head>
+	<meta charset="utf-8" />
+		<title>Sign up form</title>
+		<script type = "text/javascript">
+				function validateForm(form){
+					
+					if(form.fname.value==""){
+						alert("Please enter your name");
+						form.fname.focus();
+						return false;
+					}
+					else{
+						return true;
+					}
+				}
+			</script>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head> 
+<body>
+<!-- Form markup-->  
+		
+		<form method = "post" action = "mailto:enolan@ncirl.ie" onsubmit="return validateForm(this);">
+	<table>
+	<tr>	<td>Email:</td>
+			<td><input name = "Email address" type = "text"  tabindex = "1" /></td>
+	</tr>
+	<tr>	<td>Password:</td>
+			<td><input name = "pwrd" type = "password" /></td>
+	</tr>
+	<tr>	
+			<td><label for = "clickBox">Subscribe to Newsletter</label></td>
+			<td><input type = "checkbox" name = "newsLtr" value = "yes" id = "clickBox"/></td>
+	</tr>
+
+</body>
